@@ -82,4 +82,15 @@ public class BinaryTree{
         return list;
     }
 
+    public int getMaxDepth(){
+        return getMaxDepth(root);
+    }
+
+    private int getMaxDepth(Node node){
+        if(node == null) return 0;
+        int left_height = getMaxDepth(node.getLeft());
+        int right_height = getMaxDepth(node.getRight());
+        return (left_height > right_height) ? left_height + 1 : right_height + 1;
+    }
+
 }

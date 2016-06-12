@@ -25,10 +25,10 @@ public class MainRunner {
 		tree.getBinaryTreeAsArray();*/
 
         int [] arr = {1,2,3,4,5,6,7,8,9};
-        Heap heap = new Heap(arr);
-        int index = heap.getLeft(3);
+        //Heap heap = new Heap(arr);
+        //int index = heap.getLeft(3);
 
-        System.out.println(index);
+        //System.out.println(index);
     }
 
     public static Node randomNode(){
